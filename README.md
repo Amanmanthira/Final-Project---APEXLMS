@@ -24,7 +24,8 @@ Additionally, this system includes an **AI Chatbot** powered by **Python Flask**
 ## License
 This project is **free to use and edit**.  
 Feel free to customize it to fit your needs. No licensing restrictions apply.  
-**Developed by:** Aman Manthira  
+
+### Developed by: Aman Manthira  
 
 ## ScreenShots
 ![Image](https://github.com/user-attachments/assets/756e4f13-df38-4f7d-86a8-7960bbea2df2)
