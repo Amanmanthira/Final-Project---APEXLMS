@@ -11,7 +11,7 @@ This **Learning Management System (LMS)** is designed with the following user ro
 - **👩‍🏫 Lecturer**: Add and manage course materials, assignments, and student grades.  
 - **👨‍🎓 Student**: Access courses, submit assignments, and view grades.  
 
-Additionally, this system includes an **AI Chatbot** powered by **Python Flask**, providing intelligent assistance for user queries and enhancing the overall experience.
+Additionally, this system includes an **🤖AI Chatbot** powered by **Python Flask**, providing intelligent assistance for user queries and enhancing the overall experience.
 
 ---
 
