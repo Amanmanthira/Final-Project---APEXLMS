@@ -76,7 +76,6 @@ Feel free to customize it to fit your needs. No licensing restrictions apply.
 ![Image](https://github.com/user-attachments/assets/3670c003-0ce1-434d-b5ce-8383ceb313dc)
 ![Image](https://github.com/user-attachments/assets/8e68f6c6-6bf3-4c53-b5a4-5bd530d6fc7d)
 ![Image](https://github.com/user-attachments/assets/620e98ba-1985-47c9-bfa5-1ea0f03475df)
-
 ---
 
 ## 🌈 More Features and Icons  
