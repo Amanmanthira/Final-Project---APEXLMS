@@ -47,7 +47,7 @@ query_possibilities = {
     "announcement": ["announcement", "notice", "update", "news", "bulletin"],
     "department": ["department", "faculty", "unit", "school"],
     "topic": ["topic", "chapter", "section", "module"],
-    "assignment": ["assignment", "task", "homework", "project"],
+    "assignment": ["assignment list", "task", "homework", "project"],
     "lecturer": ["lecturer", "teacher", "professor", "instructor"]
 }
 
@@ -136,7 +136,6 @@ def generate_response(user_input, db_results, category):
     return response_templates(db_results, category)
 
 @app.route("/chat", methods=["POST"])
-@app.route("/chat", methods=["POST"])
 def chat():
     logger.info("Received a chat request")
     user_input = request.json.get("message", "").strip()
@@ -152,7 +151,18 @@ def chat():
     greetings = ['hi', 'hello', 'hey', 'hola', 'good morning', 'good afternoon', 'good evening']
     if any(greeting in user_input_lower for greeting in greetings):
         response = "Hi, I'm ApexBot, an AI-built chatbot specially designed for Apex Institute, first time in Sri Lanka! 😊 How can I assist you today?"
-
+    elif any(phrase in user_input_lower for phrase in ["how to submit assignment", "how to submit assignments", "submit my assignment", "how do i submit assignment" , "how to submit assigments"]):
+      response = (
+        "Here’s how you can submit your assignment:\n"
+        "- Step 1 : Go to the course section in the sidebar and click it.\n"
+            '<img src="./images/AssigmentSteps/AssigmentStep1.png" alt="Assignment Submission Guide" style="width: 200px; height: auto;" />\n'
+        "- step 2 : Click View Course on the course card. \n"
+                    '<img src="./images/AssigmentSteps/AssigmentStep2.png" alt="Assignment Submission Guide" style="width: 200px; height: auto;" />\n'
+        "- Step 3 : Now click 'Assignments' under the topics section.\n"
+                            '<img src="./images/AssigmentSteps/AssigmentStep4.png" alt="Assignment Submission Guide" style="width: 500px; height: 200px;" />\n'
+        "- Step 4 : Finally, upload your submission file in the card..\n"
+                            '<img src="./images/AssigmentSteps/AssigmentStep3.png" alt="Assignment Submission Guide" style="width: 300px; height: auto;" />\n'
+      )
     # Check for 'What can you do' questions
     elif "what can you do" in user_input_lower or "how can you help" in user_input_lower:
         response = (
@@ -164,6 +174,24 @@ def chat():
             "- You can ask me about course materials, homework, and more.\n\n"
             "Just ask me anything, and I'll do my best to assist you! 😄"
         )
+        
+        # Check for 'What can you do' questions
+    elif "my assigment is very large" in user_input_lower or "My assignment is very large. I can't upload it." in user_input_lower:
+        response = (
+        "Oh... that means your assignment is quite large! 📄✨ That’s great—you've put in a lot of effort! 😊\n\n"
+        "No worries! If your assignment is too large to upload, you can upload it to a cloud storage service (like Google Drive) and generate a shareable link. 🔗📂\n\n"
+        "Then, add that link to a Word document and upload the document instead. That way, everything will be accessible! 👍🚀"
+    )        
+
+    # Check for 'Who are you?' or similar questions
+    elif "who are you" in user_input_lower or "what are you" in user_input_lower or "tell me about yourself" in user_input_lower or "who are u" in user_input_lower:
+        response = (
+            "I'm ApexBot, a specially designed AI chatbot for Apex Institute to assist my lovely students! 😊"
+            "Right now, I'm still learning and under development by my creators."
+            "I was developed by Amectar , a software development and AI generative company founded by Aman Manthira.\n"
+            "Feel free to ask me anything, and I'll do my best to help you! 🚀"
+        )
+
     else:
         # Correct the spelling and process further for non-greeting messages
         user_input = correct_spelling(user_input)
