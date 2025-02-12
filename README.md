@@ -12,7 +12,7 @@ This **Learning Management System (LMS)** is designed with the following user ro
 - **👨‍🎓 Student**: Access courses, submit assignments, and view grades.  
 
 Additionally, this system includes an **🤖AI Chatbot** powered by **Python Flask**, providing intelligent assistance for user queries and enhancing the overall experience.
-
+![Image](https://github.com/user-attachments/assets/d09b4309-b808-400a-a406-6e06d0ed3c03)
 ---
 
 ## 💡 Key Features
@@ -76,6 +76,8 @@ Feel free to customize it to fit your needs. No licensing restrictions apply.
 ![Image](https://github.com/user-attachments/assets/3670c003-0ce1-434d-b5ce-8383ceb313dc)
 ![Image](https://github.com/user-attachments/assets/8e68f6c6-6bf3-4c53-b5a4-5bd530d6fc7d)
 ![Image](https://github.com/user-attachments/assets/620e98ba-1985-47c9-bfa5-1ea0f03475df)
+![Image](https://github.com/user-attachments/assets/448e926b-02b0-419a-a123-ae1ca7970524)
+![Image](https://github.com/user-attachments/assets/d09b4309-b808-400a-a406-6e06d0ed3c03)
 ---
 
 ## 🌈 More Features and Icons  
