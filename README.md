@@ -1,4 +1,4 @@
-# 🌈 Learning Management System (LMS)
+# 🌈 Learning Management System(LMS)
 
 **🎓 Final Year Project**  
 This is my final project for my university, developed as part of my academic journey at **ICBT Campus**.
